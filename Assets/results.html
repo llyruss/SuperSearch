@@ -7,42 +7,43 @@
   <title>superSearch!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/results-style.css">
 </head>
 
 <body>
+  <center>
+    <div class="container">
+      <div class="notification is-primary">
+        Super Stats
+        <h2>
+          Hero:<span id=""></span>
+        </h2>
+        <img id="hero-pic">
+        <div id="bio">Bio:</div>
+  </center>
+  </div>
+  </div>
   <div class="hero is-fullheight is-primary has-background">
-    <img alt="Background Image" class="hero-background is-transparent" src="bg.jpg" />
-    <div class="hero-body">
-      <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <div class="content">
-              <center>
-                <h1> Super Search! </h1>
-                <h4>Search for your favorite heroes and villains here </h4>
-                <div class="field">
-                  <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Search Hero">
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-magnifying-glass"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                      <i class="fas fa-check"></i>
-                    </span>
-                  </p>
-                  <button class="button is-link" type="submit"> Search </button>
-                </div>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <img alt="Background Image" class="hero-background is-transparent" src="./css/bg.jpg" />
+
+    <button class="button is-link" type="submit"> New Search </button>
+  </div>
+  </center>
+
+  <div class="columns">
+  <div class="column is-6" class="hero-feature">film</div>
+  <div class="column is-6" class="recent-comics">comic</div>
+  </div>
+</div>
+
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min"></script>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
