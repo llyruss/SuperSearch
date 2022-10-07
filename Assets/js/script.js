@@ -8,7 +8,7 @@ fetch(requestUrl)
       return response.json();
     })
     .then(function (data) {
-        window.localStorage.setItem("bio", data)
+       console.log(data)
     });
 
 
