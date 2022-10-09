@@ -1,14 +1,22 @@
 
+//Marvel API request
+
+let characterSearch = "thor"
+let marvelAPIKey = "c44516421d70a8db4bf8fede1fc59165"
 
 
-var requestUrl = "https://gateway.marvel.com/v1/public/characters?name=thor&limit=10&apikey=c44516421d70a8db4bf8fede1fc59165"
+var requestUrl = "https://gateway.marvel.com/v1/public/characters?name="+characterSearch+"&limit=10&apikey="+marvelAPIKey
 
 fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
-    .then(function (data) {
-       console.log(data)
+    .then(function (characterData) {
+       console.log(characterData)
+
+       let characterBio = characterData.data.results[0].description
+       console.log(characterBio)
+
     });
 
 //var searchButton = document.querySelector("search-button")
