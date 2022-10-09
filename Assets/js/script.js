@@ -7,6 +7,8 @@ let marvelAPIKey = "c44516421d70a8db4bf8fede1fc59165"
 
 var requestUrl = "https://gateway.marvel.com/v1/public/characters?name="+characterSearch+"&limit=10&apikey="+marvelAPIKey
 
+//fetch bio
+
 fetch(requestUrl)
     .then(function (response) {
       return response.json();
@@ -16,6 +18,12 @@ fetch(requestUrl)
 
        let characterBio = characterData.data.results[0].description
        console.log(characterBio)
+
+       let bioArea = document.getElementById("characterBio")
+        bioArea.textContent=characterBio
+
+       let characterID=characterData.data.results[0].id 
+       console.log(characterID)
 
     });
 
