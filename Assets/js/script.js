@@ -69,6 +69,21 @@ fetch(bioRequestUrl)
 
          console.log("expected-movie-title-0", movie0)
          console.log("expected-poster-0", poster0)
+
+        let currentSelector = document.querySelector("#title-0")
+        currentSelector.textContent = movie0
+        currentSelector = document.querySelector("#poster-0")
+        currentSelector.src = poster0
+        currentSelector = document.querySelector("#title-1")
+        currentSelector.textContent = movie1
+        currentSelector = document.querySelector("#poster-1")
+        currentSelector.src = poster1
+        currentSelector = document.querySelector("#title-2")
+        currentSelector.textContent = movie2
+        currentSelector = document.querySelector("#poster-2")
+        currentSelector.src = poster2
+    
+      
      })
      
      
