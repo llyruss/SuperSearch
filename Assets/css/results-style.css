@@ -4,7 +4,7 @@ body {
 }
 
 
-.comic1, .comic2, .comic3{
+#comic1, #comic2, #comic3{
     height: 400px;
     width: 200px;
     margin: 40px 10px;
