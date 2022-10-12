@@ -49,27 +49,27 @@ fetch(bioRequestUrl)
 
     });
 
-//var searchButton = document.querySelector("search-button")
+    var searchParams = "&title_type=feature,tv_series&keywords=superhero"
+    var requestUrl = "https://imdb-api.com/API/AdvancedSearch/k_zzx14p64?title="+characterSearch+searchParams;
 
+    fetch(requestUrl)
+    .then(function (response) {
+         return response.json();
+     })
+     .then(function (movieData) {
+         console.log(movieData);
 
+         let movie0 = movieData.results[0].title;
+         let movie1 = movieData.results[1].title;
+         let movie2 = movieData.results[2].title;
 
-  
+         let poster0 = movieData.results[0].image;
+         let poster1 = movieData.results[1].image;
+         let poster2 = movieData.results[2].image;
 
-    // var userSearch = "thor"
-    // var searchParams = "&title_type=feature,tv_series&keywords=superhero"
-    // var requestUrl = "https://imdb-api.com/API/AdvancedSearch/k_zzx14p64?title="+userSearch+searchParams;
-
-
-    // var featContainer = document.getElementById('hero-feature');
-
-
-    // fetch(requestUrl)
-    // .then(function (response) {
-    //      return response.json();
-    //  })
-    //  .then(function (data) {
-    //      console.log(data);
-    //  })
+         console.log("expected-movie-title-0", movie0)
+         console.log("expected-poster-0", poster0)
+     })
      
      
     
