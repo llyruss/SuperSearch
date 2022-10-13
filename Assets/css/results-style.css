@@ -5,12 +5,16 @@ body {
 
 
 #comic1, #comic2, #comic3{
-    height: 400px;
+    height: 100%;
     width: 200px;
-    margin: 40px 10px;
+    margin: 40px 10px 5px;
     
 }
 .comicart{
     display: flex;
     justify-content: space-around;
+}
+.inside{
+    color: white;
+    font-size: larger;
 }
