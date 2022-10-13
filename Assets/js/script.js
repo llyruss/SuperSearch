@@ -1,7 +1,12 @@
 //Marvel API request
-
+let characterName = document.getElementById("entercharecter");
 let characterSearch = "thor";
 let marvelAPIKey = "c44516421d70a8db4bf8fede1fc59165";
+
+/*fetchButton.addEventListener("click", function () {
+  characterSearch = characterName.value;
+  console.log(characterSearch);
+});*/
 
 let bioRequestUrl =
   "https://gateway.marvel.com/v1/public/characters?name=" +
