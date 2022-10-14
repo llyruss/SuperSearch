@@ -32,8 +32,14 @@ body {
     flex-wrap: wrap;
 }
 .inside{
-    color: white;
+    color: black;
     font-size: larger;
+    background-color: white;
+    height: 60px;
+    font-size: 35px;
+    margin: 10px;
+    justify-content: center;
+
 }
 #poster-0, #poster-1, #poster-2{
     height: auto;
@@ -44,11 +50,31 @@ body {
     display: flex;
     color: white;
     justify-content: center;
-    margin: 50px 0px ;
+    flex-direction: column;
+   
     
     
+}
+.movie-adjust{
+    display: flex;
+    justify-content: space-around;
 }
 .recent-comics{
-    
+    display: flex;
+   
 
 }
+.card-header{
+    color: black;
+    background-color: white;
+}
+.return-search{
+    display: flex;
+    justify-content: center;
+    
+}
+.button{
+    width: 200px;
+    margin: 20px;
+}
+
