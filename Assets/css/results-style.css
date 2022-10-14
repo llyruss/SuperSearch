@@ -16,7 +16,7 @@ body {
 #comic1, #comic2, #comic3{
     height: auto;
     width: 200px;
-    margin: 40px 10px 5px;
+    
     
 }
 .comicart{
@@ -29,8 +29,9 @@ body {
     font-size: larger;
 }
 #poster-0, #poster-1, #poster-2{
-    height: 200px;
-    margin: 0px 20px;
+    height: auto;
+    width: 200px;
+    
 }
 .the-movie{
     display: flex;
@@ -39,4 +40,8 @@ body {
     margin: 50px 0px ;
     
     
+}
+.recent-comics{
+    
+
 }
