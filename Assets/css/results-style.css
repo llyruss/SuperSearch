@@ -5,7 +5,7 @@ body {
 
 
 #comic1, #comic2, #comic3{
-    height: 100%;
+    height: auto;
     width: 200px;
     margin: 40px 10px 5px;
     
@@ -13,8 +13,21 @@ body {
 .comicart{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .inside{
     color: white;
     font-size: larger;
+}
+#poster-0, #poster-1, #poster-2{
+    height: 200px;
+    margin: 0px 20px;
+}
+.the-movie{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 50px 0px ;
+    
+    
 }
