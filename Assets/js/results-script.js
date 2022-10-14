@@ -33,6 +33,9 @@ function bioFetch() {
             let characterID = characterData.data.results[0].id;
             console.log(characterID);
 
+            let hero = document.getElementById("heroName")
+            hero.textContent=heroName
+
             //fetch 3 most recent issues
 
 
