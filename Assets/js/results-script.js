@@ -104,13 +104,13 @@ function movieFetch() {
         .then(function (movieData) {
             console.log(movieData);
     
-            let movie0 = movieData.results[0].title;
-            let movie1 = movieData.results[1].title;
-            let movie2 = movieData.results[2].title;
+            let movie0 = movieData.results[0]?.title;
+            let movie1 = movieData.results[1]?.title;
+            let movie2 = movieData.results[2]?.title;
     
             let poster0 = movieData.results[0].image;
-            let poster1 = movieData.results[1].image;
-            let poster2 = movieData.results[2].image;
+            let poster1 = movieData.results[1]?.image;
+            let poster2 = movieData.results[2]?.image;
     
             console.log("expected-movie-title-0", movie0);
             console.log("expected-poster-0", poster0);
