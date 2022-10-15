@@ -11,8 +11,12 @@ body {
     padding-top: 50px;
 }
 
-
-
+.posterTitle{
+    max-height: 24px;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 #bio {
     background-color: yellow;
     text-align: center;
@@ -49,10 +53,8 @@ body {
 .the-movie{
     display: flex;
     color: white;
-    justify-content: center;
-    flex-direction: column;
-   
-    
+    justify-content: start;
+    flex-direction: column
     
 }
 .movie-adjust{
