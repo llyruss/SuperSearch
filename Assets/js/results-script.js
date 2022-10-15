@@ -57,6 +57,15 @@ function bioFetch() {
             let comic2 = comicData.data.results[1].title;
             let comic3 = comicData.data.results[2].title;
 
+            let title0 = document.getElementById("title0")
+            title0.textContent = comic1
+
+            let title1 = document.getElementById("title1")
+            title1.textContent = comic2
+
+            let title2 = document.getElementById("title2")
+            title2.textContent = comic3
+
             let comicImgUrl1 = comicData.data.results[0].images[0].path;
             let comicImgUrl2 = comicData.data.results[1].images[0].path;
             let comicImgUrl3 = comicData.data.results[2].images[0].path;
