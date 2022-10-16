@@ -15,3 +15,4 @@ function onSearchSubmit(event) {
 searchButtonEl.addEventListener('click', onSearchSubmit);
 
 
+
