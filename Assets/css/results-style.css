@@ -1,27 +1,37 @@
 body {
-  background-image: url("./bg.jpg");
-  background-size: cover;
+    font-family: 'Bangers', cursive;
+    text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
+    background-image: url("./bg.jpg");
+    background-size: cover;
 }
 
+
 .content {
-  display: flex;
-  align-items: center;
-  font-size: 200%;
-  flex-direction: column;
-  padding-top: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 0;
 }
 
 .posterTitle {
-  max-height: 24px;
-  max-width: 200px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+    max-height: 24px;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+#heroName {
+    margin-bottom: 25px;
+}
+
 #bio {
-  background-color: yellow;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #comic1,
@@ -30,67 +40,84 @@ body {
 #poster-0,
 #poster-1,
 #poster-2 {
-  height: auto;
-  width: 200px;
+    height: auto;
+    width: 200px;
 }
+
 .comicart {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 .inside {
-  color: black;
-  font-size: larger;
-  background-color: white;
-  height: 60px;
-  font-size: 35px;
-  margin: 10px;
-  justify-content: center;
+    color: black;
+    font-size: larger;
+    background-color: rgb(214, 196, 225);
+    height: 60px;
+    font-size: 35px;
+    margin: 10px;
+    justify-content: center;
 }
 
 .the-movie {
-  display: flex;
-  color: white;
-  justify-content: start;
-  flex-direction: column;
+    display: flex;
+    color:  rgb(214, 196, 225);
+    justify-content: start;
+    flex-direction: column;
 }
+
 .movie-adjust {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
+
 .recent-comics {
-  display: flex;
+    display: flex;
 }
+
 .card-header {
-  color: black;
-  background-color: white;
+    color: black;
+    background-color:  rgb(214, 196, 225);
 }
+
+.posterTitle {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .return-search {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 .button {
-  width: 200px;
-  margin: 20px;
-  background-color: yellow;
-  color:black;
+    width: 200px;
+    margin: 20px;
+    background-color: yellow;
+    color: black;
 }
 
 @media screen and (max-width: 992px) {
-  .inside {
-    color: blueviolet;
-  }
-  #bio {
-    background-color: yellow;
-    font-size: 60%;
-  }
-  .movie-adjust {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .button{
-    background-color: red;
-    color: white;
-  }
+
+
+    #bio {
+        background-color: yellow;
+        font-size: 60%;
+    }
+
+    .movie-adjust {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    .button {
+        background-color: red;
+        color: white;
+    }
 }

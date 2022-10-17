@@ -1,3 +1,8 @@
+body {
+    font-family: 'Bangers', cursive;
+    text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
+}
+
 .hero.has-background {
     position: relative;
     overflow: hidden;
@@ -12,7 +17,11 @@
 
 }
 
+.card-content {
+    background-color: rgb(214, 196, 225)
+}
 
-
-
-
+.button.is-link {
+    background-color: yellow;
+    color: black;
+}
