@@ -1,10 +1,10 @@
 var searchButtonEl = document.querySelector("#search-button");
 var heroName = localStorage.getItem("character-name")
 console.log("storage-name" ,heroName)
-//Marvel API request
 
+// This function is the Marvel API request
+// Fetches character bio and recent comic data for the input in local storage
 let marvelAPIKey = "c44516421d70a8db4bf8fede1fc59165";
-
 
 function bioFetch() {
   
@@ -15,7 +15,7 @@ function bioFetch() {
         "&limit=10&apikey=" +
         marvelAPIKey;
 
-    //fetch bio
+    
 
     fetch(bioRequestUrl)
         .then(function (response) {
@@ -36,7 +36,7 @@ function bioFetch() {
             let hero = document.getElementById("heroName")
             hero.textContent=heroName
 
-            //fetch 3 most recent issues
+            
 
 
     console.log("expected-hero",heroName)
@@ -88,7 +88,8 @@ function bioFetch() {
 
 
 
-
+// This function is the IMDB API request
+// Fetches the movie titles and posters for the input in local storage
 function movieFetch() {
     
     var searchParams = "&title_type=feature,tv_series&keywords=superhero";
@@ -130,9 +131,8 @@ function movieFetch() {
         });
 }
 
-
+// Runs the fetch functions
     bioFetch(heroName);
-    
     movieFetch(heroName);
    
 

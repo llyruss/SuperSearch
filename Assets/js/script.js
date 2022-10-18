@@ -1,9 +1,8 @@
 var searchButtonEl = document.querySelector("#search-button");
 var heroNameInput = document.querySelector("#enter-character");
 var heroName = ""
-//Marvel API request
 
-
+// This function is setting the search input in local storage to be used on the results script.
 function onSearchSubmit(event) {
 
     heroName = heroNameInput.value
