@@ -1,8 +1,10 @@
 # SuperSearch
-Group Project 1
 
 ## DESCRIPTION:
  A search engine for your favorite superheroes and villains to find their most recent media appearances.
+
+## MOTIVATION:
+Making it easier to find recent movie and comic appearances for given characters in one place.
 
 ## INSTALLATION AND UPDATES MADE:
 HTML, CSS, JavaScript
@@ -19,9 +21,6 @@ https://github.com/llyruss/SuperSearch
 
 ## URL:
 https://llyruss.github.io/SuperSearch
-
-## MOTIVATION:
-Making it easier to find recent movie and comic appearances for given characters in one place.
 
 ## LICENSES:
 The code has an MIT License.
