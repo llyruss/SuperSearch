@@ -13,8 +13,8 @@ Marvel API and IMDB API
 
 ## USAGE:
 Put a character in the search bar and hit search to display results as shown in pictures 
-![img](Assets/css/super%20search1.png)
-![img](Assets/css/super%20search%20photo.png)
+![img](Assets/css/index-screenshot.png)
+![img](Assets/css/results-screenshot.png)
 
 ## Github:
 https://github.com/llyruss/SuperSearch
